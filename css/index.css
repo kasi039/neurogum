@@ -177,6 +177,11 @@ footer {
   .intro h3,
   .info h3 {
     font-size: 1.2em;
+    text-align: justify;
+  }
+  
+  .intro p, .info p, .ingredients p{
+    text-align: justify;
   }
 }
 
@@ -229,6 +234,7 @@ footer {
   .intro h3,
   .info h3 {
     font-size: 1em;
+    text-align: justify;
   }
 
   footer {
