@@ -42,6 +42,11 @@ main.faq-container {
   text-align: center;
 }
 
+.faq-container h2 {
+  color: #003366;
+  text-align: center;
+}
+
 .intro-text {
   text-align: center;
   margin-bottom: 2em;
