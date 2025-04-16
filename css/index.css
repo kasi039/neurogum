@@ -131,25 +131,28 @@ footer {
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 1em;
     height: auto;
   }
 
   .nav-links {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
     width: 100%;
     margin-top: 10px;
   }
 
   .nav-links a {
-    display: block;
-    width: 100%;
-    background-color: #004080;
+    text-align: center;
     padding: 10px;
-    color: #fff;
+    width: 100%;
+    max-width: 300px;
+    background-color: #004080;
+    color: white;
+    border-radius: 4px;
+    font-size: 1em;
   }
 
   main {
@@ -179,10 +182,16 @@ footer {
     padding: 1em;
   }
 
+  .nav-links {
+    align-items: center; /* Ensure links stay centered on mobile */
+  }
+
   .nav-links a {
-    background-color: #006699;
-    border-radius: 0;
-    font-size: 1em;
+    width: 100%;
+    max-width: 280px;
+    font-size: 0.95em;
+    padding: 10px 12px;
+    background-color: #005580;
   }
 
   .logo img {
