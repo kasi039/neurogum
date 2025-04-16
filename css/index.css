@@ -120,3 +120,98 @@ footer {
   background: #002244;
   color: white;
 }
+
+
+
+/* =======================
+   Responsive Design
+   ======================= */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+    height: auto;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    background-color: #004080;
+    padding: 10px;
+    color: #fff;
+  }
+
+  main {
+    padding: 1em;
+  }
+
+  main h1,
+  main h2 {
+    font-size: 1.5em;
+  }
+
+  .intro h3,
+  .info h3 {
+    font-size: 1.2em;
+  }
+}
+
+/* Mobiles (480px and below) */
+@media (max-width: 480px) {
+  body {
+    background-color: #ffffff;
+    color: #222;
+  }
+
+  .navbar {
+    background-color: #005577;
+    padding: 1em;
+  }
+
+  .nav-links a {
+    background-color: #006699;
+    border-radius: 0;
+    font-size: 1em;
+  }
+
+  .logo img {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  main {
+    padding: 1em;
+    font-size: 0.95em;
+  }
+
+  main h1 {
+    font-size: 1.4em;
+    color: #006699;
+  }
+
+  main h2 {
+    font-size: 1.2em;
+    color: #004466;
+  }
+
+  .intro h3,
+  .info h3 {
+    font-size: 1em;
+  }
+
+  footer {
+    font-size: 0.9em;
+    padding: 0.8em;
+  }
+}

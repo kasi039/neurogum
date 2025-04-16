@@ -77,3 +77,120 @@ footer {
   text-align: center;
   padding: 1em;
 }
+
+
+
+/* ================================
+   Responsive Design - Nootropics Page
+   ================================ */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .nav-links a {
+    background-color: #004080;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    font-size: 1em;
+  }
+
+  main.nootropics-container {
+    padding: 1.5em;
+  }
+
+  main h1 {
+    font-size: 1.6em;
+  }
+
+  .intro {
+    font-size: 1em;
+  }
+
+  .banner {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 2em;
+  }
+
+  section {
+    margin-top: 2em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  ul, ol {
+    margin-left: 1.2em;
+  }
+
+  footer {
+    font-size: 0.95em;
+  }
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+  body {
+    font-size: 0.95em;
+    background-color: #ffffff;
+  }
+
+  .logo img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .navbar {
+    padding: 1em;
+    background-color: #004466;
+  }
+
+  .nav-links a {
+    font-size: 0.95em;
+    background-color: #005580;
+    padding: 10px 12px;
+  }
+
+  main.nootropics-container {
+    padding: 1em;
+  }
+
+  main h1 {
+    font-size: 1.4em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  .banner {
+    max-width: 100%;
+    height: auto;
+  }
+
+  ul, ol {
+    margin-left: 1em;
+  }
+
+  footer {
+    padding: 0.8em;
+    font-size: 0.9em;
+  }
+}

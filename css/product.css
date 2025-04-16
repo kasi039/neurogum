@@ -258,3 +258,153 @@ button[disabled] {
     max-width: 100%;
   }
 }
+
+
+
+/* =======================
+   Responsive Design
+   ======================= */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 1em;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    background-color: #003366;
+    padding: 10px;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    font-size: 1em;
+  }
+
+  main {
+    padding: 1em;
+  }
+
+  h1, h2, h3, h4 {
+    font-size: 1.2em;
+  }
+
+  .product {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product.reverse {
+    flex-direction: column;
+  }
+
+  .product-text {
+    text-align: left;
+  }
+
+  .product-display {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-image,
+  .product-info {
+    width: 100%;
+  }
+
+  .product-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .options {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .options button {
+    flex: 1 0 45%;
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 0.9em;
+    padding: 1em;
+  }
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+  body {
+    background-color: #ffffff;
+    font-size: 0.95em;
+  }
+
+  .navbar {
+    background-color: #004466;
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  .nav-links a {
+    font-size: 0.95em;
+    padding: 10px 12px;
+    background-color: #005580;
+  }
+
+  .logo img {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+  h2, h3, h4 {
+    font-size: 1.1em;
+  }
+
+  .product-display {
+    gap: 1.5em;
+  }
+
+  .options button {
+    padding: 10px;
+    font-size: 13px;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .selector-group h4 {
+    font-size: 1em;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+  .price-old {
+    font-size: 13px;
+  }
+
+  .price-each {
+    font-size: 12px;
+  }
+
+  footer {
+    padding: 0.8em;
+  }
+}
