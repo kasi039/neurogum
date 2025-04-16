@@ -59,8 +59,13 @@ main.about-container {
   padding: 2em;
   max-width: 1100px;
   margin: auto;
+  text-align: justify;
 }
 
+main.about-container p,
+main.about-container li {
+  text-align: justify;
+}
 main section {
   margin-bottom: 3em;
 }
@@ -98,53 +103,53 @@ iframe {
 
 
 
-
-/* ================================
-   Responsive Design - About Page
-   ================================ */
-
 /* Tablets (≤ 768px) */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     height: auto;
     padding: 1em;
+    gap: 10px;
   }
 
   .nav-links {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    align-items: center;
     width: 100%;
-    margin-top: 10px;
+    gap: 10px;
   }
 
   .nav-links a {
     display: block;
     width: 100%;
+    max-width: 280px;
+    text-align: center;
     background-color: #004080;
     padding: 10px;
-    color: #fff;
+    color: white;
+    font-weight: bold;
     border-radius: 4px;
   }
 
   main.about-container {
     padding: 1.5em;
+    text-align: justify;
   }
 
-  h1 {
-    font-size: 1.5em;
+  h1, h2 {
     text-align: center;
-  }
-
-  h2 {
-    font-size: 1.3em;
   }
 
   iframe {
     width: 100%;
     height: auto;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.95em;
   }
 }
 
@@ -163,6 +168,9 @@ iframe {
   .navbar {
     padding: 1em;
     background-color: #004466;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
   .nav-links a {
@@ -173,10 +181,7 @@ iframe {
 
   main.about-container {
     padding: 1em;
-  }
-
-  section {
-    margin-bottom: 2em;
+    text-align: justify;
   }
 
   h1 {
@@ -187,16 +192,8 @@ iframe {
     font-size: 1.2em;
   }
 
-  ul {
-    padding-left: 1.2em;
-  }
-
-  ul li {
-    margin-bottom: 0.5em;
-  }
-
   footer {
-    font-size: 0.9em;
     padding: 0.8em;
+    font-size: 0.9em;
   }
 }
