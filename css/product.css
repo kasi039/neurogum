@@ -270,6 +270,8 @@ button[disabled] {
   .navbar {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     height: auto;
     padding: 1em;
   }
@@ -277,8 +279,10 @@ button[disabled] {
   .nav-links {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     margin-top: 10px;
+    width: 100%;
   }
 
   .nav-links a {
@@ -287,20 +291,24 @@ button[disabled] {
     border-radius: 4px;
     display: block;
     width: 100%;
+    max-width: 280px;
     font-size: 1em;
+    text-align: center;
   }
 
   main {
     padding: 1em;
+    text-align: justify;
   }
 
   h1, h2, h3, h4 {
     font-size: 1.2em;
+    text-align: center;
   }
 
   .product {
     flex-direction: column;
-    text-align: center;
+    text-align: justify;
   }
 
   .product.reverse {
@@ -308,7 +316,7 @@ button[disabled] {
   }
 
   .product-text {
-    text-align: left;
+    text-align: justify;
   }
 
   .product-display {
@@ -353,13 +361,23 @@ button[disabled] {
   .navbar {
     background-color: #004466;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 1em;
+  }
+
+  .nav-links {
+    align-items: center;
+    justify-content: center;
   }
 
   .nav-links a {
     font-size: 0.95em;
     padding: 10px 12px;
     background-color: #005580;
+    text-align: center;
+    max-width: 260px;
+    width: 100%;
   }
 
   .logo img {
@@ -375,6 +393,12 @@ button[disabled] {
 
   h2, h3, h4 {
     font-size: 1.1em;
+    text-align: center;
+  }
+
+  main {
+    padding: 1em;
+    text-align: justify;
   }
 
   .product-display {
@@ -407,5 +431,6 @@ button[disabled] {
   footer {
     padding: 0.8em;
     font-size: 0.9em;
+    text-align: center;
   }
 }
