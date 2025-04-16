@@ -260,7 +260,6 @@ button[disabled] {
 }
 
 
-
 /* =======================
    Responsive Design
    ======================= */
@@ -274,15 +273,15 @@ button[disabled] {
     text-align: center;
     height: auto;
     padding: 1em;
+    gap: 10px;
   }
 
   .nav-links {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
     width: 100%;
+    gap: 10px;
   }
 
   .nav-links a {
@@ -294,6 +293,15 @@ button[disabled] {
     max-width: 280px;
     font-size: 1em;
     text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .logo img {
+    height: 45px;
+    width: 45px;
+    margin-bottom: 10px;
   }
 
   main {
@@ -306,22 +314,10 @@ button[disabled] {
     text-align: center;
   }
 
-  .product {
-    flex-direction: column;
-    text-align: justify;
-  }
-
-  .product.reverse {
-    flex-direction: column;
-  }
-
-  .product-text {
-    text-align: justify;
-  }
-
   .product-display {
     flex-direction: column;
     align-items: center;
+    gap: 2em;
   }
 
   .product-image,
@@ -330,24 +326,25 @@ button[disabled] {
   }
 
   .product-image img {
+    width: 100%;
     max-width: 100%;
     height: auto;
   }
 
   .options {
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
   }
 
   .options button {
     flex: 1 0 45%;
     font-size: 14px;
+    padding: 10px;
   }
 
   footer {
-    font-size: 0.9em;
     padding: 1em;
+    font-size: 0.9em;
+    text-align: center;
   }
 }
 
@@ -364,11 +361,16 @@ button[disabled] {
     align-items: center;
     justify-content: center;
     padding: 1em;
+    text-align: center;
+    gap: 10px;
   }
 
   .nav-links {
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    gap: 10px;
   }
 
   .nav-links a {
@@ -378,12 +380,21 @@ button[disabled] {
     text-align: center;
     max-width: 260px;
     width: 100%;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
   }
 
   .logo img {
     height: 40px;
     width: 40px;
     margin-bottom: 10px;
+  }
+
+  main {
+    padding: 1em;
+    text-align: justify;
   }
 
   h1 {
@@ -396,13 +407,15 @@ button[disabled] {
     text-align: center;
   }
 
-  main {
-    padding: 1em;
-    text-align: justify;
+  .product-display {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
   }
 
-  .product-display {
-    gap: 1.5em;
+  .product-image img {
+    max-width: 100%;
+    height: auto;
   }
 
   .options button {
