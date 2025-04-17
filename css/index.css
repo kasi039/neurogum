@@ -123,11 +123,9 @@ footer {
 
 
 
-/* =======================
-   Responsive Design
-   ======================= */
 
-/* Tablets (≤768px) */
+
+/* Tablets (768px) */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
