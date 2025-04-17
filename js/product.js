@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
   
       buttons.forEach(button => {
         button.addEventListener("click", () => {
-          // Remove 'selected' class from others in this group
+          
           buttons.forEach(btn => btn.classList.remove("selected"));
           button.classList.add("selected");
   
-          // Scroll to section if data-target attribute is present
+          
           const targetId = button.getAttribute("data-target");
           if (targetId) {
             const target = document.querySelector(targetId);
